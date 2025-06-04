@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TinyTech</title>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="listStyle.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> <!--For icons-->
 </head>
 <body>
@@ -14,14 +15,14 @@
       <a href="employee_list.html">Employee List</a>
     </div>
   </nav>
-  <div class="body-container">
+  <div class="container-w90">
     <div class="search-box">
       <input type="text" id="employee-search-field" placeholder="Search by employee name" />
       <span class="fas fa-search"></span>
     </div>
     <br>
-    <div id="employee-list"></div> <!--Auto generated employee list-->
+    <div id="employee-list" class="container-w90"></div> <!--Auto generated employee list-->
   </div>
-  <script src="index.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
