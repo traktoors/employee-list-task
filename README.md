@@ -1,5 +1,8 @@
 # Mini Employee List – Internship Homework
 
+## Extra implementation
+The extra feature makes the employee list more flexible and user-friendly. Instead of only searching by name, users can choose to filter by either name or job title. This is especially helpful if someone is looking for a role—like “Software Developer”—rather than a specific person. For example, if you need to find any software developer in the company, just switch the filter to “Title” and type “Software Developer” in the search box. The list updates automatically, making it faster and easier to find the right person based on what you know. It’s a simple upgrade that adds a lot of practical value.
+
 ## Story
 
 You’ve just started an internship at **TinyTech**, a fast‑growing startup with twelve staff and zero admin tools. The HR manager keeps juggling spreadsheets and Post‑it notes to remember who does what. Your mission: deliver a **single‑page prototype** that anyone in the office can open in a browser to look up colleagues quickly. Nail this and you’ll earn serious bragging rights (and maybe an extended contract!).
