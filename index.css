@@ -70,7 +70,7 @@ nav a{
 .employee-item{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    overflow: hidden;
     border-radius: 8px;
     background-color: #f5f5f5;
     cursor: pointer;
@@ -85,7 +85,10 @@ nav a{
   max-height: 1000px;
   opacity: 1;
 }
-
+.list-tile-emp-description{
+    background-color: #cec7c0;
+    border-radius: 0;
+}
 .employee-item:hover .list-tile-emp-summary{
     background-color: #686868;
     color: white;
@@ -94,6 +97,7 @@ nav a{
     text-align: end;
 }
 .list-tile-active{
-    background-color: #686868 !important;
+    background-color: #686868;
+    border-radius: 8px 8px 0 0;
     color: white;
 }
