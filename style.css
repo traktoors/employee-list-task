@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 body{
@@ -42,7 +43,7 @@ nav a{
     display: flex;
     width: 100%;
     padding: 14px 20px;
-    border-radius: 8px;
+    border-radius: 8px 8px 8px 0;
     background-color: #eeeeee;
 }
 .search-box input{
@@ -52,6 +53,19 @@ nav a{
 }
 .search-box input:focus{
     outline: none;
+}
+
+#filter-types{
+    width: 100%;
+    display: flex;
+}
+#filter-types p{
+    padding: 5px;
+}
+#filter-types ul{
+    display: flex;
+    padding: 5px;
+    gap: 20px;
 }
 
 #employee-list .exp-list:nth-child(odd) .exp-list-header {

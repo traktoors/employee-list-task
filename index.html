@@ -20,9 +20,17 @@
       <input type="text" id="employee-search-field" placeholder="Search by employee name" />
       <span class="fas fa-search"></span>
     </div>
+    <div id="filter-types">
+      <p>Filter by:</p>
+      <ul>
+        <li><label><input type="radio" name="filter-type" value="name" checked /> Name</label></li>
+        <li><label><input type="radio" name="filter-type" value="title" /> Title</label></li>
+      </ul>
+    </div>
     <br>
     <div id="employee-list" class="container-w90"></div> <!--Auto generated employee list-->
   </div>
+  <script src="extraImpl.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

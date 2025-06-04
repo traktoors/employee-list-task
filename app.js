@@ -30,10 +30,16 @@ async function loadEmployees() {
 }
 
 
-// Render employees on screen with search text as filter
+// Render employees list by filtering
+// Gets updated every time search input changes
 function renderEmployees(filter = '') {
-    listContainer.innerHTML = '';
-    const filtered = allEmployees.filter(e => e.name.toLowerCase().includes(filter.toLowerCase()));
+    listContainer.innerHTML = ''; // Reset list
+    
+    const filterType = getSelectedFilterType();
+    const filtered = allEmployees.filter(e => {
+        const field = e[filterType]?.toLowerCase() || '';
+        return field.includes(filter.toLowerCase());
+    });
 
     if (filtered.length === 0) {
         listContainer.innerHTML = '<p>No employees found.</p>';
