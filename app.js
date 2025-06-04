@@ -36,10 +36,18 @@ function renderEmployees(filter = '') {
     listContainer.innerHTML = ''; // Reset list
     
     const filterType = getSelectedFilterType();
-    const filtered = allEmployees.filter(e => {
+    const filtered = allEmployees.filter(e => { // first filter from search text
         const field = e[filterType]?.toLowerCase() || '';
         return field.includes(filter.toLowerCase());
+    }).sort((a, b) => { // then sort by ascending alpabetical order for better readability 
+        if (filterType === 'name' || filterType === 'title') {
+            const fieldA = a[filterType]?.toLowerCase() || '';
+            const fieldB = b[filterType]?.toLowerCase() || '';
+            return fieldA.localeCompare(fieldB);
+        }
+        return 0; // No sorting if filterType is something else
     });
+
 
     if (filtered.length === 0) {
         listContainer.innerHTML = '<p>No employees found.</p>';
