@@ -1,0 +1,30 @@
+.exp-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-tile{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    gap: 20px;
+
+}
+.list-tile span{
+    text-align: end;
+}
+.exp-list-header{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+.exp-list-details{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.exp-list-details.show {
+  max-height: 1000px;
+  opacity: 1;
+}
