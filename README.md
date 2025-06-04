@@ -4,7 +4,7 @@
 The extra feature makes the employee list more flexible and user-friendly. Instead of only searching by name, users can choose to filter by either name or job title. This is especially helpful if someone is looking for a role—like “Software Developer”—rather than a specific person. For example, if you need to find any software developer in the company, just switch the filter to “Title” and type “Software Developer” in the search box. The list updates automatically, making it faster and easier to find the right person based on what you know. It’s a simple upgrade that adds a lot of practical value.
 
 ## You can visit page here
-[](https://traktoors.github.io/employee-list-task/)
+[Got to page link](https://traktoors.github.io/employee-list-task/)
 
 ## Story
 
