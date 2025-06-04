@@ -166,5 +166,12 @@
     "title": "UX Designer",
     "email": "henry.jackson@example.com",
     "startDate": "2023-08-25"
+  },
+  {
+    "id": 25,
+    "name": "1. Roberts Sproģis",
+    "title": "Software Developer",
+    "email": "roberts.sprogis0@gmail.com, Passionate about software development and user experience. A Computer Systems student at RTU, always exploring new technologies and writing clean, efficient code. Enjoys solving real-world problems through intuitive design and smart engineering. In free time, loves gaming and keeping up with the latest in tech.",
+    "startDate": "2024-02-01"
   }
 ]
