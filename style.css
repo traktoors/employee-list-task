@@ -44,7 +44,7 @@ nav a{
     width: 100%;
     padding: 14px 20px;
     border-radius: 8px 8px 8px 0;
-    background-color: #eeeeee;
+    background-color:rgb(211, 216, 228);
 }
 .search-box input{
     border: none;
@@ -67,9 +67,14 @@ nav a{
     padding: 5px;
     gap: 20px;
 }
+li label { /* To align radio button and its label */
+    display: flex;
+    align-items: center;
+}
 
+/* Checkered color tiles */
 #employee-list .exp-list:nth-child(odd) .exp-list-header {
-    background-color: rgb(220, 220, 220); /* darker gray */
+    background-color: rgb(220, 220, 220);
 }
 #employee-list .exp-list:nth-child(even) .exp-list-header {
     background-color: rgb(236, 236, 236);
